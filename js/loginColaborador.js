@@ -20,7 +20,7 @@ function login() {
 
     if (emailInput === validCredentials.email && passwordInput === validCredentials.password) {
         alert("Login realizado com sucesso!");
-        window.location.href = "../pages/admProjetos.html";
+        window.location.href = "../pages/AdmProjetos.html";
     } else {
         alert("Email ou senha incorretos. Tente novamente.");
     }
