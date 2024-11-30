@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito sans';
+}
+
+h1, h2, h3 {
+    font-family: 'Quicksand';
+}
+
+body {
+    background-image: url('../image/background_login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Mantém a imagem fixa durante a rolagem */
+    background-position: center; /* Centraliza a imagem */
+    height: 100vh; /* Garante que o body tenha a altura total da viewport */
+    width: 100vw; /* Garante que o body tenha a largura total da viewport */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.1rem;
+    gap: 1rem;
+    font-family: Quicksand;
+    font-size: 1.3em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.nav img {
+    width: 4rem;
+}
+
+.section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 400px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden; /* Garante que os filhos respeitem as bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave */
+}
+
+.login {
+    background-color: #fff;
+    width: 50%;
+    height: 100%;
+    
+}
+
+.image-container {
+    background-image: url('../image/login_admin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    
+}
+
+#seta_login_voltar_colab{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.image-container img {
+    width: 50%;
+}
+
+.login label {
+    display: block;
+    font-family: Quicksand;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.login {
+    padding: 2.2rem;
+}
+
+.login input {
+    width: 90%;
+    border: 1px solid #C1C3C5;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.login input:focus {
+    border-color: #4379EE; 
+    outline: none;
+    box-shadow: 0 0 5px #4379EE;
+}
+
+.footer-login {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.checkbox-input {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 5px;
+}   
+
+.checkbox-input p{
+    font-size: 0.8rem;
+}
+
+.forget-password {
+    font-size: 0.8rem;
+}
+
+.button-submit {
+    margin-top: 20px;   
+}
+
+#login-b {
+    padding: 5px 35px;
+    color: #fff;
+    background-color: #4379EE;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#login-b:hover {
+    background-color: #1d5eeb;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+
+    #seta_login_voltar_colab{
+        height: 25px;
+        width: 30px;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        top: 250px;
+        display: flex;
+        flex-direction: column; 
+        width: 90%;
+        height: auto; 
+    }
+
+    .image-container {
+        display: none; 
+    }
+
+    .login {
+        width: 100%;
+        height: auto; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .login input {
+        width: 100%; 
+        max-width: 300px;
+    }
+
+    .footer-login {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        gap: 1rem; 
+    }
+
+    .button-submit {
+        text-align: center;
+    }
+
+    #login-b {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+    }
+}

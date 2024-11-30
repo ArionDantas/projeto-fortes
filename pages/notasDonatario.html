@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Donatário</title>
+    <link rel="shortcut icon" href="../image/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" href="../css/notasDonatario.css">
+    <script src="../js/openNavProfile.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <label class="mobile">
+                <input type="checkbox">
+                <div class="toggle">
+                    <span class="top-line common"></span>
+                    <span class="middle-line common"></span>
+                    <span class="bottom-line common"></span>
+                </div>
+
+                <div class="slide">
+                    <img src="../image/logo_azul.png" alt="Logo do Projeto Fortificar">
+                    <ul>
+                        <li><a href="../pages/dadosDonatario.html" target="_self"><i class="fas fa-user"></i>Dados</a></li>
+                        <li><a href="../pages/notasDonatario.html" target="_self"><i class="fas fa-file-lines"></i>Notas</a></li>
+                    </ul>
+                    <div class="sub-menu-wrap-mobile">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <i class="fa-solid fa-user"></i>
+                                <h3>Donatário</h3>
+                            </div>
+                            <hr>
+
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-edit"></i>
+                                <p>Editar informações</p>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-gear"></i>
+                                <p>Configurações</p>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <p>Logout</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </label>
+
+            <div class="nav-desktop">
+
+                <div class="nav-access">
+                    <img src="../image/logo_azul.png" alt="Logo do Projeto Fortificar">
+                    <ul>
+                        <a href="../pages/dadosDonatario.html" target="_self">
+                            <li><i class="fa-solid fa-user"></i>Dados</li>
+                        </a>
+
+                        <a href="../pages/notasDonatario.html" target="_self">
+                            <li><i class="fa-solid fa-file-lines"></i>Notas</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="account-user" onclick="toggleMenu()">
+                    <!-- <img src="../image/perfil.png" alt="Foto do usuário"> -->
+
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <i class="fa-solid fa-user"></i>
+                            <h3>Donatário</h3>
+                        </div>
+                        <hr>
+
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-edit"></i>
+                            <p>Editar informações</p>   
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Configurações</p>
+                            <span>></span>
+                        </a>
+                        <a href="../pages/loginDonatario.html" target="_self" class="sub-menu-link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="tittle">NOTAS</h1>
+
+            <div class="enviarNotas">
+                <label for="enviarNotas">Enviar notas fiscais:</label>
+
+                <div class="enviarNotaInput">
+                    <input type="file" name="enviarNotas" id="enviarNotas">
+                </div>
+            </div>
+
+            
+            <div class="notasEnviadas">
+                <label for="enviarNotas">Notas Fiscais Enviadas:</label>
+
+                <div class="notasEnviadasArea">
+
+                    
+                    <div class="documentos-enviados">
+                        <div class="dataDonatario">
+                            <div class="dataCriacao">
+                                <label for="data-criacao">De:</label>
+                                <input type="date" name="data-criacao" id="data-criacao">
+                            </div>
+                            <div class="dataAdmissao">
+                                <label for="data-admissao">Até:</label>
+                                <input type="date" name="data-admissao" id="data-admissao">
+                            </div>
+                        </div>
+                        <div class="card-documento">    
+                            <p>Formulário de inscrição</p>
+                            <div class="action">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                        </div>
+                        <div class="card-documento">    
+                            <p>Ata de eleição dos dirigentes</p>
+                            <div class="action">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                        </div>
+                        <div class="card-documento">    
+                            <p>Estatuto/contrato social</p>
+                            <div class="action">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                        </div>
+                        <div class="card-documento">    
+                            <p>Estatuto/contrato social</p>
+                            <div class="action">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                        </div>
+                        <div class="card-documento">    
+                            <p>Estatuto/contrato social</p>
+                            <div class="action">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                        </div>
+                        <button class="b-baixar">Baixar todos</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

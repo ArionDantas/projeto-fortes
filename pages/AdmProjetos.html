@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Administrador</title>
+    <link rel="shortcut icon" href="../image/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" href="../css/AdmProjetos.css">
+    <script src="../js/openNavProfile.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <label class="mobile">
+                <input type="checkbox">
+                <div class="toggle">
+                    <span class="top-line common"></span>
+                    <span class="middle-line common"></span>
+                    <span class="bottom-line common"></span>
+                </div>
+
+                <div class="slide">
+                    <img src="../image/logo_azul.png" alt="Logo do Projeto Fortificar">
+                    <ul>
+                        <li><a href="./AdmProjetosEntra.html" target="_self"><i class="fas fa-user"></i>Projetos</a></li>
+                    </ul>
+                    <div class="sub-menu-wrap-mobile">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <i class="fa-solid fa-user"></i>
+                                <h3>ADM</h3>
+                            </div>
+                            <hr>
+
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-edit"></i>
+                                <p>Editar informações</p>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-gear"></i>
+                                <p>Configurações</p>
+                            </a>
+                            <a href="../pages/loginColaborador.html" class="sub-menu-link">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <p>Logout</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </label>
+
+            <div class="nav-desktop">
+
+                <div class="nav-access">
+                    <img src="../image/logo_azul.png" alt="Logo do Projeto Fortificar">
+                    <ul>
+                        <a href="./AdmProjetosEntra.html" target="_self">
+                            <li><i class="fa-solid fa-user"></i>Projetos</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="account-user" onclick="toggleMenu()">
+                    <!-- <img src="../image/perfil.png" alt="Foto do usuário"> -->
+
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <i class="fa-solid fa-user"></i>
+                            <h3>Administrador</h3>
+                        </div>
+                        <hr>
+
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-edit"></i>
+                            <p>Editar informações</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Configurações</p>
+                            <span>></span>
+                        </a>
+                        <a href="../pages/loginColaborador.html" target="_self" class="sub-menu-link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main style="overflow: hidden;">
+        <section>
+
+            <h1 class="tittle">
+                POJETOS
+            </h1>
+
+            <div class="colocarNoMeio">
+                <a href="./AdmProjetosEntra.html">
+                    <div class="container-projects">
+                        <div class="project-x">
+                            <h3>Projeto X</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+           
+        </section>
+    </main>
+</body>
+
+</html>

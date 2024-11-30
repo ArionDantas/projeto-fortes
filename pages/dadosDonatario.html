@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Donatário</title>
+    <link rel="shortcut icon" href="../image/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" href="../css/dadosDonatario.css">
+    <script src="../js/openNavProfile.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <label class="mobile">
+                <input type="checkbox">
+                <div class="toggle">
+                    <span class="top-line common"></span>
+                    <span class="middle-line common"></span>
+                    <span class="bottom-line common"></span>
+                </div>
+
+                <div class="slide">
+                    <img src="../image/logo_azul.png" alt="Logo do Projeto Fortificar">
+                    <ul>
+                        <li><a href="../pages/dadosDonatario.html" target="_self"><i class="fas fa-user"></i>Dados</a></li>
+                        <li><a href="../pages/notasDonatario.html" target="_self"><i class="fas fa-file-lines"></i>Notas</a></li>  
+                        <!-- <li><a href="#"><i class="fas fa-comments"></i>Comentários</a></li>
+                        <li><a href="#"><i class="fas fa-cogs"></i>Dashboard</a></li>
+                        <li><a href="#"><i class="fas fa-tv"></i>Configurações</a></li> -->
+                    </ul>
+                    <div class="sub-menu-wrap-mobile">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <i class="fa-solid fa-user"></i>
+                                <h3>Donatário</h3>
+                            </div>
+                            <hr>
+
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-edit"></i>
+                                <p>Editar informações</p>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-gear"></i>
+                                <p>Configurações</p>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <p>Logout</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </label>
+
+            <div class="nav-desktop">
+
+                <div class="nav-access">
+                    <img src="../image/logo_azul.png" alt="Logo do Projeto Fortificar">
+                    <ul>
+                        <a href="../pages/dadosDonatario.html" target="_self">
+                            <li><i class="fa-solid fa-user"></i>Dados</li>
+                        </a>
+
+                        <a href="../pages/notasDonatario.html" target="_self">
+                            <li><i class="fa-solid fa-file-lines"></i>Notas</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="account-user" onclick="toggleMenu()">
+                    <!-- <img src="../image/perfil.png" alt="Foto do usuário"> -->
+
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <i class="fa-solid fa-user"></i>
+                            <h3>Donatário</h3>
+                        </div>
+                        <hr>
+
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-edit"></i>
+                            <p>Editar informações</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Configurações</p>
+                            <span>></span>
+                        </a> 
+                        <a href="../pages/loginDonatario.html" target="_self" class="sub-menu-link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="tittle">DADOS DE CADASTRO</h1>
+            <div class="actions-donatario">
+                <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item item1">
+                    <div class="infoDonatario">
+                        <label for="nome-social">Nome social:</label>
+                        <input type="text" name="nome-social" id="nome-social">
+
+                        <label for="Email">Email:</label>
+                        <input type="email" name="Email" id="Email">
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="number" name="telefone" id="telefone">
+
+
+                        <div class="dataDonatario">
+                            <div class="dataCriacao">
+                                <label for="data-criacao">Data criação</label>
+                                <input type="date" name="data-criacao" id="data-criacao">
+                            </div>
+                            <div class="dataAdmissao">
+                                <label for="data-admissao">Data admissão</label>
+                                <input type="date" name="data-admissao" id="data-admissao">
+                            </div>
+                        </div>
+
+                        <div class="form-container">
+                            <form>
+                                <div class="form-group">
+                                    <label for="rua">Rua:</label>
+                                    <input type="text" id="rua" name="rua">
+                                </div>
+                                <div class="form-group">
+                                    <label for="numero">Número:</label>
+                                    <input type="text" id="numero" name="numero">
+                                </div>
+                                <div class="form-group">
+                                    <label for="bairro">Bairro:</label>
+                                    <input type="text" id="bairro" name="bairro">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cep">CEP:</label>
+                                    <input type="text" id="cep" name="cep" value="29136096">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cidade">Cidade:</label>
+                                    <input type="text" id="cidade" name="cidade">
+                                </div>
+                                <div class="form-group">
+                                    <label for="uf">UF:</label>
+                                    <input type="text" id="uf" name="uf">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item item2">
+                    <div class="infoDonatario2">
+                        <label for="desc-instituicao">Descrição sobre a instituição:</label>
+                        <textarea name="desc-instituicao" id="desc-instituicao" rows="10"></textarea>
+
+                        <label for="desc-instituicao">Descrição sobre as ações do projeto:</label>
+                        <textarea name="desc-instituicao" id="desc-instituicao" rows="10"></textarea>
+
+                        <div class="documentos-enviados">
+                            <div class="card-documento">    
+                                <p>Formulário de inscrição</p>
+                                <div class="action">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <i class="fa-solid fa-download"></i>
+                                </div>
+                            </div>
+                            <div class="card-documento">    
+                                <p>Ata de eleição dos dirigentes</p>
+                                <div class="action">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <i class="fa-solid fa-download"></i>
+                                </div>
+                            </div>
+                            <div class="card-documento">    
+                                <p>Estatuto/contrato social</p>
+                                <div class="action">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <i class="fa-solid fa-download"></i>
+                                </div>
+                            </div>
+                            <div class="card-documento">    
+                                <p>Estatuto/contrato social</p>
+                                <div class="action">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <i class="fa-solid fa-download"></i>
+                                </div>
+                            </div>
+                            <div class="card-documento">    
+                                <p>Estatuto/contrato social</p>
+                                <div class="action">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <i class="fa-solid fa-download"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortificar</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="link-bar">
+        <div id="logo-container">
+            <img src="./image/Fortificar-Logo.png" alt="Logo da Fortificar">
+            <span id="text-logo-right">FORTIFICAR</span>
+        </div>
+        <ul id="container-links">
+            <li>
+                <a href="#container-links">Home</a>
+            </li>
+            <li>
+                <a href="#projects">Projetos</a>
+            </li>
+            <li>
+                <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+                <a href="#contact">Contato</a>
+            </li>
+            <li class="login-normal">
+                <a style="cursor: pointer;" id="active-dropdown" onclick="ActiveDropdown()" class="no-copy">Login</a>
+
+                <div id="dropdown-acess">
+                    <div class="list-acess-style">
+                        <ul class="list-dropdown-acess">
+                            <li class="item-2-3-acess"><a href="./pages/loginColaborador.html">Administrador</a></li>
+                            <hr class="line-white">
+                            <li class="item-2-3-acess"><a href="./pages/loginDonatario.html">Donatário</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+            <li class="login-responsive">
+                <a style="cursor: pointer;" href="./pages/login-responsive.html" class="no-copy">Login</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="image-background">
+        <div id="fundo-opaco">
+        </div>
+        <img src="./image/fundo-1.png" alt="Fundo fortificar">
+        <div class="section-1">
+            <p id="section-1-phrase">Transforme vidas com a gente!</p>
+            <h1>PROJETO FORTIFICAR <br> 2024</h1>
+            <p>Conheça nossos projetos sociais e faça parte dessa mudança.Juntos, podemos construir um futuro
+            melhor para todos.</p>
+            <div class="contariner-buttons-section-1">
+                <a href="#" id="inscricao">Inscrição</a>
+                <a href="#" id="editais">Edital</a>
+            </div>
+        </div>
+        <div class="white-part">
+        </div>
+    </section>
+
+    <section id="projects">
+        <header class="projects-header">
+            <h1>Projetos Sociais</h1>
+            <p>A Fortes apoia projetos sociais que melhoram a qualidade de vida, <br> reduzem desigualdades e ampliam o
+            acesso a direitos e serviços <br> básicos. Confira:</p>
+            <p id="responsive-p">A Fortes apoia projetos sociais que melhoram a qualidade de vida, reduzem desigualdades e ampliam o
+            acesso a direitos e serviços básicos. Confira:</p>
+        </header>
+        <div class="element-left">
+            <img src="./image/element-projects-left.png" alt="Marca de decoração">
+        </div>
+        <div class="projects-links-central">
+            <a href="#">
+                <div class="ver-mais">
+                    <h2>Ver mais</h2>
+                </div>
+            </a>
+            <div class="projects-links">
+                <div class="preservate">
+                    <div class="title-preservate">
+                        <h2>Instituto <br> Preservate</h2>
+                    </div>
+                </div> 
+                <div class="macDia">
+                    <div class="mcDia-Central">
+                        <div class="tittle-macDia">
+                            <h2>McDia Feliz</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="acacci">
+                    <div class="title-acacci">
+                        <h2>Acacci</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="idolo">
+                <div class="idolo-central">
+                    <div class="tittle-idolo">
+                        <h2>Projeto Ídolo <br> Social</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-links-central-responsive">
+            <div class="preservate">
+                <div class="title-preservate">
+                    <h2>Instituto <br> Preservate</h2>
+                </div>
+            </div>
+
+            <div class="macDia">
+                <div class="tittle-macDia">
+                    <h2>McDia Feliz</h2>
+                </div>
+            </div>
+
+            <div class="acacci">
+                <div class="title-acacci">
+                    <h2>Acacci</h2>
+                </div>
+            </div>
+
+            <div class="idolo">
+                <div class="tittle-idolo">
+                    <h2>Projeto Ídolo <br> Social</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="element-right">
+            <img src="./image/element-projects-right.png" alt="">
+        </div>
+    </section>
+
+    <section class="sobre-nos" id="sobre">
+            <img src="./image/Imagem-predio.png" alt="Prédio fortes">
+            
+            <article class="text-sobre-nos">
+                <h2>Sobre nós</h2>
+                <p>No coração da nossa missão, o <strong>Projeto Fortificar</strong> representa o <br> compromisso de investir em soluções sociais que fortalecem <br> comunidades, transformam vidas e promovem o <br> desenvolvimento sustentável. Como uma iniciativa voltada a <br> apoiar ações com impacto real, o Fortificar foi criado para <br> identificar, fomentar e viabilizar projetos que tragam <br> mudanças positivas para a sociedade.</p>
+            </article>
+            <article class="text-sobre-nos-responsive">
+                <h2>Sobre nós</h2>
+                <p>No coração da nossa missão, o <strong>Projeto Fortificar</strong> representa o compromisso de investir em soluções sociais que fortalecem comunidades, transformam vidas e promovem o desenvolvimento sustentável. Como uma iniciativa voltada a apoiar ações com impacto real, o Fortificar foi criado para identificar, fomentar e viabilizar projetos que tragam mudanças positivas para a sociedade.</p>
+            </article>
+    </section>
+
+    <section id="contact">
+        <div class="copyright">
+            <h3>Copyright © 2024 Fortes Engenharia.</h3>
+        </div>
+
+        <div class="copyright-reponsive">
+            <h3>Copyright © 2024 Fortes Engenharia.</h3>
+        </div>
+
+        <div class="tittle-div-contact">
+            <h1>Contatos</h1>
+        </div>
+        <div class="divisao"></div>
+
+        <div class="central-contact">
+            <div class="contacts-links">
+                <div class="email">
+                    <img src="./image/email-icon.png" alt="ícone de email">
+                    <p><strong>fortesprojetos@fortes.ind.br</strong></p>
+                </div>
+                <div class="telefone">
+                    <img src="./image/phone-icon.png" alt="Ícone telefone">
+                    <p><strong>+55 (27) 3325-8883</strong></p>
+                </div>
+                <div class="location">
+                    <img src="./image/place-icon.png" alt="Ícone local">
+                    <p><strong>
+                        Av. Maruipe,2.793 <br>
+                            Bairro Santa Luíza, <br>
+                            Vitória - ES <br>
+                            CEP: 29045-235
+                        </strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="logo-fortes">
+            <img src="./image/Logo-fortes.png" alt="Logo Fortificar">
+        </div>
+        
+    </section>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>

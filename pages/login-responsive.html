@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortificar</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body id="login-responsive">
+
+    <nav class="link-bar">
+        <div id="logo-container">
+            <img src="./images/Fortificar-Logo.png" alt="Logo da Fortificar">
+            <span id="text-logo-right">FORTIFICAR</span>
+        </div>
+        <ul id="container-links">
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="../index.html">Projetos</a>
+            </li>
+            <li>
+                <a href="../index.html">Sobre</a>
+            </li>
+            <li>
+                <a href="../index.html">Contato</a>
+            </li>
+            <li class="login-normal">
+                <a style="cursor: pointer;" id="active-dropdown" onclick="ActiveDropdown()" class="no-copy">Login</a>
+
+                <div id="dropdown-acess">
+                    <div class="list-acess-style">
+                        <ul class="list-dropdown-acess">
+                            <li><a href="#">Pré-Inscrito</a></li>
+                            <hr class="line-white">
+                            <li class="item-2-3-acess"><a href="#">Admin</a></li>
+                            <hr class="line-white">
+                            <li class="item-2-3-acess"><a href="#">Donatário</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+            <li class="login-responsive">
+                <a style="cursor: pointer;" href="./pages/login-responsive.html" class="no-copy">Login</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="links-login">
+        <div class="button">
+                <a href="./loginColaborador.html">ADM</a>
+        </div>
+
+        <div style="height: 40px;"></div>
+
+        <div class="button">
+            <a href="./loginDonatario.html">Donatário</a>
+        </div>
+    </div>
+    
+</body>
+</html>

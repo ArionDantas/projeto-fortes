@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Donatário</title>
+    <link rel="shortcut icon" href="../image/logo.png" type="image/png">
+    <link rel="stylesheet" href="../css/loginDonatario.css">
+    <script src="../js/loginDonatário.js"></script>
+</head>
+
+<body>
+    <header class="nav">
+        <div>
+            <img src="../image/logo.png" alt="Logo do programa Fortificar da empresa Forte Engenharia">
+        </div>
+        <div>
+            <span>Fortificar</span>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <a href="../index.html"><img src="../image/arrow-left-contained-02.png" alt="Seta de voltar" id="seta_login_voltar"></a>
+
+                <div class="image-container">
+                    <!-- <img src="../image/login_admin.jpg" alt="Imagem ilustrativa de um escritório"> -->
+                </div>
+                <div class="login">
+                    <h1>Portal do Donatário</h1>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite aqui o seu email">
+                    <br>
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" id="password" placeholder="Digite aqui a sua senha">
+
+                    <div class="footer-login">
+                        <div class="checkbox-input">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <p>Lembra de mim</p>
+                        </div>
+                        <div class="forget-password">
+                            <a href="#">Esqueceu sua senha?</a>
+                        </div>
+                    </div>
+
+                    <div class="button-submit">
+                        <button type="submit" id="login-b" onclick="login()">Entrar</button>
+                    </div>  
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
